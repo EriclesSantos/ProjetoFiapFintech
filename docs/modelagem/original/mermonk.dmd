@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="mermonk" id="241FBC22-5E30-C6EB-0A3D-5065FB08E790" version="3.5">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:10:39 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>241FBC22-5E30-C6EB-0A3D-5065FB08E790</designId>
+</OSDM_Design>

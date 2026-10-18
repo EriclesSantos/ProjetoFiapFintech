@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B5A0B41-1E14-FC36-32E8-38482590A42A" name="INVESTIMENTO">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>93E3E50F-9845-0433-A043-74A923C0635E</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_investimento" id="8C2D67F6-D6E6-AC07-4560-F8FEE5BC2B0D">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>887D62FF-DB78-18AF-FEC0-42C6142CF402</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_fundo" id="0BF36AF0-E952-FAF9-577E-FF6C62D38A8E">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>25F7570A-78C3-EC11-27C6-D04D11DA5500</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_investido" id="281A93B7-076E-9C8D-CEDF-4EA3BE6CC1EF">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>A05E04C3-F52F-C7EF-592F-E3010F67F68C</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rentabilidade" id="EFCC2FA8-9737-1367-C4A3-A62971100784">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>8CE4D016-014C-994B-1F00-4D1A245A2259</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_aplicacao" id="F3CF9D86-DD98-9708-8D53-2B1ECC340681">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>D72B3203-67F2-B075-00A4-64ED4B250F7F</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_retirar" id="A2D23344-4208-3B91-2FB1-DE731728EFEA">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>3EEA75E6-C5AC-9C37-120A-BB88C8DEE84B</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_id_usuario" id="8E9E10F8-9EBD-46D3-A153-0AF17A53D94E">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>1FFDD319-AB0F-9ACB-372D-1920ADAECB04</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FF304B5-1EEF-C017-5097-618DC5FA4AB3" referredColumn="F6583D9A-DABA-A818-72F4-CC89B6197668"/>
+</associations>
+</Column>
+<Column name="USUARIO_perfil_financeiro" id="56357E83-8E76-EFE4-9815-2F609EA6CFEF">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>608D4BCD-54C2-D7F8-C9E0-3F4D660A1E0A</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FF304B5-1EEF-C017-5097-618DC5FA4AB3" referredColumn="C2151B11-5AA7-3B39-91AB-F787F1E23183"/>
+</associations>
+</Column>
+<Column name="INVESTIMENTO_ID" id="FDAED78B-BAE7-9BE4-9622-8F7B34261E2B">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="60437C28-68EC-0636-20D5-6E5A89BE94A3" name="INVESTIMENTO_PK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="FDAED78B-BAE7-9BE4-9622-8F7B34261E2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3666B42A-01C8-50AF-0D84-E1C610C92025" name="INVESTIMENTO_USUARIO_FK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>05F5F962-A853-CBE4-43EE-C35F04A2F5CE</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E9E10F8-9EBD-46D3-A153-0AF17A53D94E"/>
+<colUsage columnID="56357E83-8E76-EFE4-9815-2F609EA6CFEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

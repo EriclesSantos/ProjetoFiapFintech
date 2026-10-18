@@ -1,0 +1,166 @@
+CREATE TABLE ALERTA 
+( 
+    id_alerta                 INTEGER NOT NULL, 
+    tipo_alerta               VARCHAR2(50) NOT NULL, 
+    mensagem                  VARCHAR2(50) NOT NULL, 
+    data                      DATE NOT NULL, 
+    lido                      VARCHAR2(30) NOT NULL, 
+    USUARIO_id_usuario        VARCHAR2(50) NOT NULL, 
+    USUARIO_perfil_financeiro VARCHAR2(50) NOT NULL 
+); 
+
+ALTER TABLE ALERTA 
+    ADD CONSTRAINT ALERTA_PK PRIMARY KEY (id_alerta);
+
+CREATE TABLE CONTA_FINANCEIRA 
+( 
+    id_conta    VARCHAR2(50) NOT NULL, 
+    nome_conta  VARCHAR2(50) NOT NULL, 
+    tipo_conta  VARCHAR2(50) NOT NULL, 
+    saldo_atual NUMBER NOT NULL 
+); 
+
+ALTER TABLE CONTA_FINANCEIRA 
+    ADD CONSTRAINT CONTA_FINANCEIRA_PK PRIMARY KEY (id_conta);
+
+CREATE TABLE CONTEUDO_EDUCATIVO 
+( 
+    id_conteudo               VARCHAR2(50) NOT NULL, 
+    tipo                      VARCHAR2(50) NOT NULL, 
+    titulo                    VARCHAR2(50) NOT NULL, 
+    nivel_conhecimento        VARCHAR2(50) NOT NULL, 
+    url                       NVARCHAR2(1) NOT NULL, 
+    USUARIO_id_usuario        VARCHAR2(50) NOT NULL, 
+    USUARIO_perfil_financeiro VARCHAR2(50) NOT NULL, 
+    ALERTA_id_alerta          INTEGER NOT NULL 
+); 
+
+CREATE UNIQUE INDEX CONTEUDO_EDUCATIVO__IDX ON CONTEUDO_EDUCATIVO (ALERTA_id_alerta ASC);
+
+ALTER TABLE CONTEUDO_EDUCATIVO 
+    ADD CONSTRAINT CONTEUDO_EDUCATIVO_PK PRIMARY KEY (id_conteudo);
+
+CREATE TABLE DEFINICAO_META 
+( 
+    id_meta                   VARCHAR2(50) NOT NULL, 
+    USUARIO_id_usuario        VARCHAR2(50) NOT NULL, 
+    USUARIO_perfil_financeiro VARCHAR2(50) NOT NULL 
+); 
+
+ALTER TABLE DEFINICAO_META 
+    ADD CONSTRAINT DEFINICAO_META_PK PRIMARY KEY (id_meta);
+
+CREATE TABLE INVESTIMENTO 
+( 
+    id_investimento           VARCHAR2(50) NOT NULL, 
+    tipo_fundo                VARCHAR2(50) NOT NULL, 
+    valor_investido           NUMBER NOT NULL, 
+    rentabilidade             NUMBER NOT NULL, 
+    data_aplicacao            DATE NOT NULL, 
+    data_retirar              DATE NOT NULL, 
+    USUARIO_id_usuario        VARCHAR2(50) NOT NULL, 
+    USUARIO_perfil_financeiro VARCHAR2(50) NOT NULL, 
+    INVESTIMENTO_ID           NUMBER NOT NULL 
+); 
+
+ALTER TABLE INVESTIMENTO 
+    ADD CONSTRAINT INVESTIMENTO_PK PRIMARY KEY (INVESTIMENTO_ID);
+
+CREATE TABLE Relation_7 
+( 
+    TRANSACAO_id_transacao       INTEGER NOT NULL, 
+    INVESTIMENTO_INVESTIMENTO_ID NUMBER NOT NULL 
+); 
+
+ALTER TABLE Relation_7 
+    ADD CONSTRAINT Relation_7_PK PRIMARY KEY (TRANSACAO_id_transacao, INVESTIMENTO_INVESTIMENTO_ID);
+
+CREATE TABLE TRANSACAO 
+( 
+    id_transacao              INTEGER NOT NULL, 
+    tipo                      VARCHAR2(50) NOT NULL, 
+    categoria                 VARCHAR2(50) NOT NULL, 
+    descricao                 VARCHAR2(50) NOT NULL, 
+    valor                     NUMBER NOT NULL, 
+    "date"                    DATE NOT NULL, 
+    CONTA_FINANCEIRA_id_conta VARCHAR2(50) NOT NULL 
+); 
+
+ALTER TABLE TRANSACAO 
+    ADD CONSTRAINT TRANSACAO_PK PRIMARY KEY (id_transacao);
+
+CREATE TABLE USUARIO 
+( 
+    id_usuario                VARCHAR2(50) NOT NULL, 
+    nome                      VARCHAR2(50) NOT NULL, 
+    email                     NVARCHAR2(50) NOT NULL, 
+    senha                     NVARCHAR2(50) NOT NULL, 
+    data_nasc                 DATE NOT NULL, 
+    tipo_usuario              VARCHAR2(50) NOT NULL, 
+    perfil_financeiro         VARCHAR2(50) NOT NULL, 
+    CONTA_FINANCEIRA_id_conta VARCHAR2(50) NOT NULL 
+); 
+
+CREATE UNIQUE INDEX USUARIO__IDX ON USUARIO (CONTA_FINANCEIRA_id_conta ASC);
+
+ALTER TABLE USUARIO 
+    ADD CONSTRAINT USUARIO_PK PRIMARY KEY (id_usuario, perfil_financeiro);
+
+ALTER TABLE ALERTA 
+    ADD CONSTRAINT ALERTA_USUARIO_FK 
+    FOREIGN KEY (USUARIO_id_usuario, USUARIO_perfil_financeiro)
+    REFERENCES USUARIO (id_usuario, perfil_financeiro);
+
+ALTER TABLE CONTEUDO_EDUCATIVO 
+    ADD CONSTRAINT CONTEUDO_EDUCATIVO_ALERTA_FK 
+    FOREIGN KEY (ALERTA_id_alerta)
+    REFERENCES ALERTA (id_alerta);
+
+ALTER TABLE CONTEUDO_EDUCATIVO 
+    ADD CONSTRAINT CONTEUDO_EDUCATIVO_USUARIO_FK 
+    FOREIGN KEY (USUARIO_id_usuario, USUARIO_perfil_financeiro)
+    REFERENCES USUARIO (id_usuario, perfil_financeiro);
+
+ALTER TABLE DEFINICAO_META 
+    ADD CONSTRAINT DEFINICAO_META_USUARIO_FK 
+    FOREIGN KEY (USUARIO_id_usuario, USUARIO_perfil_financeiro)
+    REFERENCES USUARIO (id_usuario, perfil_financeiro);
+
+ALTER TABLE INVESTIMENTO 
+    ADD CONSTRAINT INVESTIMENTO_USUARIO_FK 
+    FOREIGN KEY (USUARIO_id_usuario, USUARIO_perfil_financeiro)
+    REFERENCES USUARIO (id_usuario, perfil_financeiro);
+
+ALTER TABLE Relation_7 
+    ADD CONSTRAINT Relation_7_INVESTIMENTO_FK 
+    FOREIGN KEY (INVESTIMENTO_INVESTIMENTO_ID)
+    REFERENCES INVESTIMENTO (INVESTIMENTO_ID);
+
+ALTER TABLE Relation_7 
+    ADD CONSTRAINT Relation_7_TRANSACAO_FK 
+    FOREIGN KEY (TRANSACAO_id_transacao)
+    REFERENCES TRANSACAO (id_transacao);
+
+ALTER TABLE TRANSACAO 
+    ADD CONSTRAINT TRANSACAO_CONTA_FINANCEIRA_FK 
+    FOREIGN KEY (CONTA_FINANCEIRA_id_conta)
+    REFERENCES CONTA_FINANCEIRA (id_conta);
+
+ALTER TABLE USUARIO 
+    ADD CONSTRAINT USUARIO_CONTA_FINANCEIRA_FK 
+    FOREIGN KEY (CONTA_FINANCEIRA_id_conta)
+    REFERENCES CONTA_FINANCEIRA (id_conta);
+
+CREATE SEQUENCE INVESTIMENTO_INVESTIMENTO_ID 
+    START WITH 1 
+    NOCACHE 
+    ORDER;
+
+CREATE OR REPLACE TRIGGER INVESTIMENTO_INVESTIMENTO_ID 
+BEFORE INSERT ON INVESTIMENTO 
+FOR EACH ROW 
+WHEN (NEW.INVESTIMENTO_ID IS NULL) 
+BEGIN 
+    :NEW.INVESTIMENTO_ID := INVESTIMENTO_INVESTIMENTO_ID.NEXTVAL; 
+END;
+/

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CE36F51-44C7-403F-1460-7D71C6E8915F" name="TRANSACAO">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:47:39 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_transacao" id="F4114B78-E641-279B-51F1-6E2B853C1C9F">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:51:03 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="1ADAE812-3230-EC64-9223-04A327E291C7">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:51:37 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="categoria" id="592BC90B-4367-1138-4B8A-1EC8E9738AB8">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:52:26 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="D95ABFA6-D1E4-A917-6FA2-D660FC31FDB3">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:52:47 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor" id="B5A7C256-DC35-5D82-389D-541A4AA27220">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:53:05 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date" id="FA75EBEF-1B2E-2751-0A97-0933D2F5C7A4">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:53:22 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_conta" id="FCA04BDB-44C1-5ED8-C883-B687C1D99D42">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:11:17 UTC</createdTime>
+<generatorID>DF425F21-6795-DA6B-5BAE-27544E3B4FEF</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<referedAttribute>FAFC6CD9-0B8E-5499-FB3C-39D455FF0D5B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="84217613-0F2E-6BB0-5C1D-C9E4F67D8DA4" name="TRANSACAO PK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:51:18 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F4114B78-E641-279B-51F1-6E2B853C1C9F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

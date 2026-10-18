@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6EC3A75C-64B6-6D39-A0DA-6C74AE94FA32" name="CONTA_FINANCEIRA">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>C584C737-AE38-1D47-CB04-CF7A7356FA5C</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_conta" id="8B35A70C-C507-D6D2-E9E1-06A697F6A33C">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>FAFC6CD9-0B8E-5499-FB3C-39D455FF0D5B</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_conta" id="14E1F819-C0EA-E82C-C57B-AEA95823AC3F">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>A1D81D37-DE74-4B6C-DE80-C3FD062535F8</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_conta" id="EFCA476E-72DB-4F2A-A989-F1C752C53768">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>2BF4597E-5B35-6620-7A38-2086FA4F8815</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="saldo_atual" id="8A6FDECC-4506-FFF3-627E-7C47E01DD623">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>C7DE38E8-00A8-6DC5-567D-211999B0B1B8</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38D8885C-A2D3-DDC7-4353-0D1EEA8F1472" name="CONTA_FINANCEIRA_PK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>C754125F-BA8F-1B21-5C86-E208911EEBAB</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B35A70C-C507-D6D2-E9E1-06A697F6A33C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

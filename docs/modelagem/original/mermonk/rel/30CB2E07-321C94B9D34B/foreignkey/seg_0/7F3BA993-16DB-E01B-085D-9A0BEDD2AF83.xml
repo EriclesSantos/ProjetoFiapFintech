@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7F3BA993-16DB-E01B-085D-9A0BEDD2AF83" containerWithKeyObject="98C1B621-F08B-4BA9-1835-C4BCE07AC4E5" localFKIndex="C83826BE-B280-BAA1-0A79-F657012F99A2" name="CONTEUDO_EDUCATIVO_ALERTA_FK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>91BD3028-FF45-77D7-8BBC-3B84204C9C70</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<referredTableLongName>ALERTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D99631C3-CAF1-4B72-0671-6FCCD70E5FC8</referredTableID>
+<keyObject>78CBD254-F18B-D031-8459-03B6DCB84F42</keyObject>
+<referredKeyID>78CBD254-F18B-D031-8459-03B6DCB84F42</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_alerta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

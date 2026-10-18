@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D99631C3-CAF1-4B72-0671-6FCCD70E5FC8" name="ALERTA">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:03 UTC</createdTime>
+<generatorID>DE9C874D-6D9A-DABD-728E-E65C43B2FDC6</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_alerta" id="A019B99D-7111-07E5-A1BC-597A97C2BA91">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>E177848E-A9E2-7D3C-BC09-44D1F614E215</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_alerta" id="97383647-0CA5-79D1-5FAD-D0D50188CC9F">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>C39EB59A-B768-20FD-91AB-7BC4F3145037</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mensagem" id="A4B68140-F0A9-9348-524F-45EB87A24D58">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>EA1BA6BB-FB96-3E84-84F8-15CD4256250B</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data" id="1C35BC02-E367-BC0A-05F1-4188B81E045F">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>6F43501C-F7E9-6622-B278-2B3C5B4FA19D</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lido" id="00759F28-CB15-6949-075F-40D9B712347A">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>21063E9B-944F-2CCA-0719-B0ACB83C1867</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_id_usuario" id="3B6B691B-CF68-662E-BC2E-C09DBD119756">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>D297F389-16DC-7AAB-D8BF-5389B2843E07</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA4311A9-438D-6A1F-8D11-C4937BDB9E8D" referredColumn="F6583D9A-DABA-A818-72F4-CC89B6197668"/>
+</associations>
+</Column>
+<Column name="USUARIO_perfil_financeiro" id="BB12A3E4-1FCF-EE2E-567B-E06A6F2F4140">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>00F310C4-284E-0722-0F37-38160102E3B4</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA4311A9-438D-6A1F-8D11-C4937BDB9E8D" referredColumn="C2151B11-5AA7-3B39-91AB-F787F1E23183"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78CBD254-F18B-D031-8459-03B6DCB84F42" name="ALERTA_PK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>6D1C113A-71E2-0430-A806-84E81C91BF92</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A019B99D-7111-07E5-A1BC-597A97C2BA91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18F837D2-C60B-11D1-6D20-647F1E6A82BE" name="ALERTA_USUARIO_FK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>AB631E86-2A77-4EC5-401C-E7C215468782</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B6B691B-CF68-662E-BC2E-C09DBD119756"/>
+<colUsage columnID="BB12A3E4-1FCF-EE2E-567B-E06A6F2F4140"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

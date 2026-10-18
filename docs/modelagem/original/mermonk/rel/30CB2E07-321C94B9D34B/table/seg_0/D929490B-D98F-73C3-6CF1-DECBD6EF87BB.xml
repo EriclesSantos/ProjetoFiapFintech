@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D929490B-D98F-73C3-6CF1-DECBD6EF87BB" name="DEFINICAO_META">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>067F930A-FE3B-8BF9-3633-19E0A6A0943E</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_meta" id="6E0FEC1F-28B9-D7F1-97E0-B1BA413639BC">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>E6854A4C-831B-72EA-7413-A46DC2F58357</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_id_usuario" id="EEEA2A7A-074E-98D4-7A18-481AE8679280">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>42F6566C-1023-C816-78D4-462466B3B52A</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5574E2B-CAD1-DB7F-BA61-B8D0FA349F15" referredColumn="F6583D9A-DABA-A818-72F4-CC89B6197668"/>
+</associations>
+</Column>
+<Column name="USUARIO_perfil_financeiro" id="52602CF4-9108-52FF-DE72-D18B639D13A8">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>208E0DF0-ED59-9BD7-5191-6669F33C032E</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5574E2B-CAD1-DB7F-BA61-B8D0FA349F15" referredColumn="C2151B11-5AA7-3B39-91AB-F787F1E23183"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E1375AF-42D2-6802-DAA5-C55D8D1572F2" name="DEFINICAO_META_PK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>C3292324-1298-BA57-97A6-996B66BE7C52</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E0FEC1F-28B9-D7F1-97E0-B1BA413639BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9ED8ED8-039B-23DA-5295-4736468CC3C8" name="DEFINICAO_META_USUARIO_FK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>6F1F4C2B-98CA-C1AA-8EC3-F7E3EE44DB8E</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEEA2A7A-074E-98D4-7A18-481AE8679280"/>
+<colUsage columnID="52602CF4-9108-52FF-DE72-D18B639D13A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

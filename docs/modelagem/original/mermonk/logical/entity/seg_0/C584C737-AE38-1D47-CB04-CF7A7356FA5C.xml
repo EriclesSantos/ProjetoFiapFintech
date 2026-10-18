@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C584C737-AE38-1D47-CB04-CF7A7356FA5C" name="CONTA_FINANCEIRA">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:43:35 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_conta" id="FAFC6CD9-0B8E-5499-FB3C-39D455FF0D5B">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:44:42 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_conta" id="A1D81D37-DE74-4B6C-DE80-C3FD062535F8">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:44:55 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_conta" id="2BF4597E-5B35-6620-7A38-2086FA4F8815">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:45:06 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="saldo_atual" id="C7DE38E8-00A8-6DC5-567D-211999B0B1B8">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:46:31 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C754125F-BA8F-1B21-5C86-E208911EEBAB" name="CONTA_FINANCEIRA PK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 13:44:53 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FAFC6CD9-0B8E-5499-FB3C-39D455FF0D5B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56304896-1633-381E-8773-666CAC9CD90A" name="CONTEUDO EDUCATIVO">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:00:15 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_conteudo" id="88180B8D-2581-0B1E-1895-4F54BF726710">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:00:31 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="3ECE8360-CB40-8F70-015F-E939AA9DE6F1">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:00:45 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titulo" id="F56572E3-1934-D105-53BE-EB080A7088A8">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:01:01 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivel_conhecimento" id="5C60C904-6FA3-0138-E910-EBC372020788">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:01:15 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="url" id="C200A7D5-D60A-11B0-40EA-962771C136D1">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:01:44 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="6C17D67A-88C0-40C1-E8E7-6E21D2BF9FA3">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:11:23 UTC</createdTime>
+<generatorID>B9A9725C-E546-1A27-1254-ABFFC71EBD56</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<referedAttribute>9A8AE1D5-4DCA-2AC7-2E9E-B0CA9BD16C16</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="perfil_financeiro" id="7107E669-C61B-C28A-EF3A-F587DB516FC6">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:11:23 UTC</createdTime>
+<generatorID>B9A9725C-E546-1A27-1254-ABFFC71EBD56</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<referedAttribute>E0655901-C002-C086-2C31-A4778F91FEED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_alerta" id="150B1C97-ACF9-740E-8576-D2532305F78D">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:11:48 UTC</createdTime>
+<generatorID>91BD3028-FF45-77D7-8BBC-3B84204C9C70</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<referedAttribute>E177848E-A9E2-7D3C-BC09-44D1F614E215</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="35492E89-CCDA-1781-DF6C-CB666C18998B" name="CONTEUDO EDUCATIVO PK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:00:42 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<engineerTo>
+<item key="30CB2E07-B564-3ECB-A62A-321C94B9D34B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>88180B8D-2581-0B1E-1895-4F54BF726710</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

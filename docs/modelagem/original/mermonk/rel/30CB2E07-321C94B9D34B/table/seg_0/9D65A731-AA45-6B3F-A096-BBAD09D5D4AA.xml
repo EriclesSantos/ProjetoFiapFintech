@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D65A731-AA45-6B3F-A096-BBAD09D5D4AA" name="Relation_7">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TRANSACAO_id_transacao" id="FF88019A-9A69-BCF6-2D0F-E76B2FD5F806">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A2E7C7A-BDD3-32CA-F0B6-C4082A1D37F4" referredColumn="80C3308F-C474-6FC6-B253-61486E690210"/>
+</associations>
+</Column>
+<Column name="INVESTIMENTO_INVESTIMENTO_ID" id="044838C5-74CE-A49C-48EE-D269A4DD3637">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7726D35-17FD-DE71-62E9-36AD67419B7A" referredColumn="FDAED78B-BAE7-9BE4-9622-8F7B34261E2B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6BC1D42-94F7-AE78-12C2-1E6C7EE5296B" name="Relation_7_PK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<ownerDesignName>mermonk</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF88019A-9A69-BCF6-2D0F-E76B2FD5F806"/>
+<colUsage columnID="044838C5-74CE-A49C-48EE-D269A4DD3637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="082A6E82-9F82-27B7-5662-52B91FAE1E87" name="Relation_7_TRANSACAO_FK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>18128F1E-FB10-40E6-8E60-75779F60B9BE</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF88019A-9A69-BCF6-2D0F-E76B2FD5F806"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F3F394E-83E5-E868-2803-6E003239C9FF" name="Relation_7_INVESTIMENTO_FK">
+<createdBy>emsantos</createdBy>
+<createdTime>2025-05-13 14:17:04 UTC</createdTime>
+<generatorID>18128F1E-FB10-40E6-8E60-75779F60B9BE</generatorID>
+<ownerDesignName>mermonk</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="044838C5-74CE-A49C-48EE-D269A4DD3637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
